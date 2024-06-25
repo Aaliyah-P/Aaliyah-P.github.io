@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style2.css">
+  <script defer src="./script2.js"></script>
+  <title>Dance Style Selector</title>
+</head>
+<body>
+  <!----------------------------------------------------- Nav menu ----------------------------------------------------------->
+ <div id="header">
+  <div class="container">
+  <nav>
+  <div class="nav-logo">
+    <div class="moon-sun" id="toggle-switch">
+      <i class="fa fa-moon" id="moon"></i>
+      <i class="fa fa-sun" id="sun"></i>
+      <button type="button" data-theme-toggle aria-label="Change to light theme">
+        <i class="fa-solid fa-toggle-off" ></i>
+        </button>
+      </div>
+  </div>
+  <ul id="sidemenu">
+    <li><a href="index.html#header">// Home</a></li>
+    <li><a href="index.html#about">// About</a></li>
+    <li><a href="index.html#projects">// Projects</a></li>
+    <li><a href="index.html#contact">// Contact</a></li>
+    <li><a href="index.html#knowledge">// Skills</a></li>
+    <i class="fa-solid fa-x menu" onclick="closemenu()" ></i>
+  </ul>
+  <i class="fa-solid fa-bars menu" onclick="openmenu()" ></i>
+</nav>
+  </div>
+
+  <!-- --------------------------------------------------- main --------------------------------------------------------->
+  <div class="container">
+    <h1 class="header-text">Dance Style Selector</h1>
+      <div class="col-1">
+        <p> Web-based application developed using HTML, CSS, and JavaScript, designed to help users discover and learn about different dance styles based on their mood,
+        energy level, and preferred song genre. This project demonstrates essential front-end development skills and provides an engaging way for users to explore various dance genres tailored to their preferences.</p>
+      </div>
+    <div class="col-2">
+      <ul class="feature-list">
+      <h3>Personalized Dance Style Selection</h3>
+      <li>Mood Selector: Users can select their current mood from options such as Happy, Sad, Excited, Relaxed, etc.</li>
+      <li>Energy Level Selector: Options to choose their energy level, such as Low, Medium, or High, in a rating scale from 1-10</li>
+      <li>Song Genre Selector: Users can choose from various music genres such as Pop, Hip-Hop, Jazz, Classical, etc.</li>
+      <li>Suggested Dance Styles: Based on the selected mood, energy level, and song genre, the application suggests suitable dance styles.</li>
+      <div class="dance-img">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.6/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/qxVPnEJlOSQhe08M/scene.splinecode" class="spline"></spline-viewer>
+      </div>
+      <h3>Detailed Dance Information:</h3>
+      <li>Comprehensive Details: Provides information about the suggested dance styles, including history, key characteristics, and popular moves.</li>
+      <li>Multimedia Integration: Includes images, video clips, and audio samples to demonstrate each dance style.</li>
+
+      <h3>User Engagement:</h3>
+      <li>Favorite Styles: Option for users to mark and save their favorite dance styles for easy access.</li>
+      <li>Shareable Links: Feature to share information about dance styles via social media or email.</li>
+
+      <h3>Technical Implementation</h3>
+      <li>HTML: Structures the application with semantic elements, providing a solid foundation for content and accessibility.</li>
+      <li>CSS: Styles the Dance Style Selector with modern, responsive design techniques, ensuring a visually appealing interface.</li>
+      <li>avaScript: Implements the core functionality, including interactive selectors, content display, and multimedia integration.</li>
+
+      <h3>Key Learning Outcomes</h3>
+      <li>Front-End Development: Gained practical experience in creating a web application from scratch.</li>
+      <li>Responsive Design: Applied CSS techniques to ensure the Dance Style Selector works well on various devices</li>
+      <li>JavaScript Programming: Enhanced skills in JavaScript, particularly in handling events, manipulating the DOM, and managing multimedia content.</li>
+      <li>User Personalization: Developed an understanding of creating personalized user experiences through interactive selections.</li>
+
+      <h3>Future Enhancements</h3>
+      <li>User Accounts: Allow users to create accounts to save their preferences and track their learning progress.</li>
+      <li>Interactive Tutorials: Add step-by-step tutorials and guided practices for each dance style.</li>
+      <li>Community Features: Implement a forum or chat feature for users to discuss and share tips about different dance styles.</li>
+      </ul>
+  </div>
+</div>
+  <div class="link-mp">
+    <button class="dance-btn">
+      <a href="https://aaliyah-p.github.io/JavaScript-Project-3/index.html"> View Here!</a>
+    </button>
+  </div>
+</div>
+</body>
+</html>

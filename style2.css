@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html{ 
+  scroll-behavior: smooth;
+   }
+  
+  :root{
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+    --link-color-light: #000000; /* for light mode*/
+    --link-color-dark: antiquewhite; /*for dark mode*/
+   
+  }
+
+body{
+  overflow-x: hidden;
+}
+
+/* ----------------------  light/dark mode    ----------------------- */
+[data-theme = "light"]{
+  --color-bg: antiquewhite;
+  --color-fg: #000000;
+  --link-color: var(var(--link-color-light));
+}
+
+[data-theme = "dark"]{
+  --color-bg: #000000;
+  --color-fg: antiquewhite;
+  --link-color: var(var(--link-color-dark));
+}
+body{
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+ }
+
+ 
+/* ---------------------------------nav----------------------------- */
+.fa-solid{
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--color-bg); 
+  color: var(--color-fg);
+ 
+}
+
+button{
+  border: none;
+  outline: none;
+  transition: all var(--global-transition-time) ease-in-out;
+  background-color: var(--color-bg); 
+  color: var(--color-fg);
+}
+
+.moon-sun{
+  font-size: 20px;
+}
+
+
+.container{
+  padding: 10px 5%;
+  
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  cursor: pointer;
+  font-family: "Inter Tight", sans-serif;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover{
+  transform: translateY(5px);
+}
+
+
+nav ul li a:hover{
+  color: #f410d6; 
+}
+
+/* -----------------------------------------     main           --------------------------------------------------------- */
+
+h1, h2, h3{
+  font-family:"Inter Tight", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+
+@font-face {
+  font-family: myFont;
+  src: url(./vcr-jp.regular.ttf);
+}
+
+
+.spline{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  flex-wrap: wrap;
+  left: 70%;
+  top: 40%;
+}
+
+.music-img, .dance-img{
+ min-width: 50%;
+ 
+}
+
+.music-img:hover{
+ cursor: pointer;
+}
+
+
+p{
+  font-family: myFont;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+
+.feature-list li{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Inter Tight", sans-serif;
+  list-style:circle;
+  margin-top: 1rem;
+  
+}
+
+li{
+  font-size: 18px;
+  flex-wrap: wrap;
+  font-family:"Inter Tight", sans-serif;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+
+
+
+.link-mp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+.music-btn, .dance-btn{
+  margin-top: 5rem;
+  font-size: 3em;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #f410d6;
+  padding: 20px;
+  box-shadow: 1px 2px 15px 5px rgb(110, 47, 193);
+}
+
+.music-btn a, .dance-btn a{
+  text-decoration: none;
+  color: #6e096ea9;
+  font-family:myFont;
+  
+}
+
+.music-btn:hover, .dance-btn:hover{
+  box-shadow: 1px 2px 15px 5px rgb(63, 29, 106);
+}
+
+
+/*--------------------------------------funscape----------------------------------------------*/
+iframe{
+  border: 2px solid #f410d6;
+  border-radius: 10px;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: #f410d6;
+}
+
+a:hover{
+  color: #d900ff;
+  
+}
+
+/* ---------------------------- CSS for mobile + tablets -------------------------------*/
+
+nav .menu{
+  display: none;
+  position: sticky;
+}
+
+
+@media only screen and (max-width: 600px){
+  .header-text{
+    margin-top: 50%;
+    
+  }
+ 
+  .container img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25%;
+    width: 100%;
+    height: 280px;
+  }
+
+  .header-text{
+    flex-basis: 100%;
+    font-size: 50px;
+  }
+
+  nav .menu{
+    display: block;
+    font-size: 35px;
+  }
+ 
+  nav ul{
+  background: #4b204b79;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100%;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin:25px;
+  }
+
+ nav ul .menu{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+ }
+
+ .sub-title{
+   font-size: 60px;
+   
+ }
+
+ .music-btn{
+  font-size: 1.5rem;
+}
+
+#spline{
+  position: static;
+}
+
+p{
+  font-size: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 1200px){
+  .spline{
+    position: static;
+    width: 45%;
+  }
+
+  li{
+    font-size: 20px;
+  }
+}

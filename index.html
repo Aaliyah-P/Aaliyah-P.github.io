@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Aaliyah Padmore</title>
+</head>
+<body>
+    <!------------------------------------- Nav menu -------------------------------------------------->
+    <div id="header">
+      <div class="container">
+      <nav>
+      <div class="nav-toggle">
+        <div class="moon-sun" id="toggle-switch">
+          <i class="fa fa-moon" id="moon"></i>
+          <i class="fa fa-sun" id="sun"></i>
+          <button type="button" data-theme-toggle aria-label="Change to light theme">
+          <i class="fa-solid fa-toggle-off" ></i>
+          </button>
+          </div>
+      </div>
+      <ul id="sidemenu">
+        <li><a href="#about">// About</a></li>
+        <li><a href="#projects">// Projects</a></li>
+        <li><a href="#knowledge">// Skills</a></li>
+        <li><a href="#contact">// Contact</a></li>
+       
+        <i class="fa-solid fa-x menu" onclick="closemenu()" aria-label="close-menu"></i>
+      </ul>
+      <i class="fa-solid fa-bars menu" onclick="openmenu()" ></i>
+     </nav>
+      </div>
+    </div>
+    <!------------------------------------- Main ----------------------------------------------------->
+      <div class="container">
+        <div class="row">
+          <div class="header-text"> 
+          <h1 class="typedText">HI! I'M AALIYAH </h1>
+          <h3> Junior Software Developer</h3>  
+          <span><p>I aim to become proficient in a number of technologies, <br> to exceed in all tasks I take on.</p></span>
+         </div>
+         <div class="text-img">
+          <img src="./assets/psycho pass.gif" alt="gif" height="400px"/> 
+         </div>
+       </div>
+     </div>
+       
+      
+
+      <!---------------------------------------- About ----------------------------------------------->
+<div id="aboutSection">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <video src="./assets/Dance vid2.mp4" controls autoplay loop muted></video>
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title" id="about">About</h2>
+          <p>I'm an aspiring Software Developer, I have a desire to help reshape the way we go about processes to improve lives and solve problems.
+          My journey into the world of software development began when Tumblr was a way of life and I thought I was a tech-wiz copying code to get music on my blog or change my theme. 
+          I continued to take an interest especially during my time as an accounts payable assistant where I began to get more curious on how to implement automation into systems to offset time-consuming workload, which lead me to take a leap and enroll in a Software Development Bootcamp.
+          I found that I love crafting fully responsive user friendly websites and understanding how something works.
+           When I'm not coding, you can find me dancing, exploring the world, learning new skills, being creative and active. </p>
+          <p> I enjoy working alone and in collaborative environments as I believe that great software is built through teamwork and diverse perspectives.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+            <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+            <p class="tab-links" onclick="opentab('education')"> Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Junior Software Developer</span><br>Designing & Building Web/Apps, Maintaining software applications, systems and solutions</li>
+              <li><span>UI/UX</span><br>Designing Web/Apps that are user- friendly and visually appealing for the user</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 -  Software Development Bootcamp</span><br> Completed various projects using HTML/ JavaScript / CSS. Database Design. Python. </li>
+            </ul>
+          </div>
+          <div class="tab-contents"  id="education">
+            <ul>
+              <li><span>2024 -</span><br> Software Development Bootcamp </li>
+              <li><span>2020 -</span><br> AAT Level 3 Diploma</li>
+              <li><span>2018 -</span><br> Bookkeeping and Accounts Level 2 </li>
+              <li><span>2018 -</span><br> Bookkeeping and Accounts Level 1 </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--------------------------------------- Projects ----------------------------------------->
+<div id="projects">
+<div class="container">
+<h2 class="sub-title">My Projects</h2>
+<div class = "cards-list">
+ <div class="card">
+  <h3>Music Player</h3>
+   <a href="./MP.html"><img src="./assets/MP.png" alt="Music Player"></a>
+  </div> 
+   <div class="card">
+  <h3>Dance Style Selector App</h3>
+   <a href= "./DSS.html"><img src="./assets/DSS.png" alt="Dance Style Selector"></a></div>
+  <div class="card">
+  <h3>Filmflix DataBase</h3>
+   <a href="https://replit.com/@aaliyahpadmore/filmflixApp?embed=true"><img src="./assets/FilmDB.png" alt="Film database"></a></div>
+  <div class="card">
+  <h3>Funscape</h3>
+   <a href="./funscape.html"><img src="./assets/RPSgame.png" alt="Interactive Games"></a></div>
+  <div class="card">
+  <h3>Just for Fun Files</h3>
+    <a href="./JFFF.html"><img src="./assets/photo.jpg" alt="photo"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---------------------------------------------------- Contact --------------------------------------------------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h2 class="sub-title">Contact</h2>
+        <p> If you would like to get in touch you can reach me here:</p>
+        <p class="envelope"><i class="fa-solid fa-envelope"></i> <a href="mailto:aaliyah_padmore@yahoo.co.uk" aria-label="email address link">aaliyah_padmore@yahoo.co.uk </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/aaliyah-padmore-511b67b3/" target="_blank" rel="noopener noreferrer" aria-label="linkedin address"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Aaliyah-P" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-label="github link"></i></a>
+          <a href="https://codepen.io/Aaliyah-P" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-codepen" aria-label="codepen link"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+         <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required autocomplete="on">
+            <input type="email" name="Email" placeholder="Your Email" required autocomplete="on">
+            <textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+            <button type="submit" class="btn btn2"> Submit</button>
+            <a href="./assets/Aaliyah Padmore CV 2024.pdf" download class="btn btn2"> Download CV </a>
+          </form>
+          <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!--------------------------------------------- Skills  ------------------------------------------------------- -->
+<div id="knowledge">
+  <div class="container"> 
+      <div class="skill-list">
+        <h2 class="sub-title">Skills</h2>
+        <ul>
+        <li class="skills-item">HTML5</li>
+        <li class="skills-item">CSS3</li>
+        <li class="skills-item">JavaScript</li>
+        <li class="skills-item">MySQL</li>
+        <li class="skills-item">SQL</li>
+        <li class="skills-item">SQLite</li>
+        <li class="skills-item">Figma</li>
+        <li class="skills-item">Spline</li>
+        <li class="skills-item">GitHub</li>
+        <li class="skills-item">Git</li>
+      </ul>
+    </div>       
+  </div>    
+</div>
+
+
+
+<footer>
+ <p id="foot-note">Designed with &#128156; by Aaliyah</p> 
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>

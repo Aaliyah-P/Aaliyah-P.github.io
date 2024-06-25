@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="dark" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style2.css">
+  <script defer src="./script2.js"></script>
+  <title>Music Player</title>
+</head>
+<body>
+ <!------------------------------------- Nav menu -------------------------------------------------->
+ <div id="header">
+  <div class="container">
+  <nav>
+    <div class="nav-toggle">
+      <div class="moon-sun" id="toggle-switch">
+        <i class="fa fa-moon" id="moon"></i>
+        <i class="fa fa-sun" id="sun"></i>
+        <button type="button" data-theme-toggle aria-label="Change to light theme">
+          <i class="fa-solid fa-toggle-off" ></i>
+          </button>
+        </div>
+    </div>
+  <ul id="sidemenu">
+    <li><a href="index.html#header">// Home</a></li>
+    <li><a href="index.html#about">// About</a></li>
+    <li><a href="index.html#projects">// Projects</a></li>
+    <li><a href="index.html#contact">// Contact</a></li>
+    <li><a href="index.html#knowledge">// Skills</a></li>
+    <i class="fa-solid fa-x menu" onclick="closemenu()" ></i>
+  </ul>
+  <i class="fa-solid fa-bars menu" onclick="openmenu()" ></i>
+</nav>
+  </div>
+</div>
+<!-- ----------------------------------- main --------------------------------------------------------->
+
+
+<div class="container">
+   <div class="row">
+    <h1 class="header-text">Music Player</h1>
+    <div class="col-1">
+     <p>a web-based application developed using HTML, CSS, and JavaScript, designed to provide users with a seamless and interactive music listening experience. 
+      This project showcases essential front-end development skills and demonstrates the capability to create a dynamic, user-friendly interface with core web technologies.</p>
+    </div>
+    <div class="col-2">
+      <h2>Features</h2>
+      <ul class="feature-list">
+      <h3>User Interface:</h3>
+      <li>Clean Design: A visually appealing and intuitive interface designed with HTML and CSS</li>
+      <li>Responsive Layout: Ensures a consistent user experience across different devices and screen sizes.</li>
+      <div class="music-img">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.4/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/W9x6YZGKJMYhqbBP/scene.splinecode" class="spline"></spline-viewer>
+      </div>
+      <h3>Music Playback:</h3>
+      <li>Play/Pause: Controls to play and pause the current track.</li>
+      <li>Next/Previous: Buttons to skip to the next or previous track in the playlist.</li>
+      <li>Seek Bar: Interactive progress bar allowing users to seek to different parts of the track.</li>
+    
+      <h3>Playlist Management:</h3>
+      <li>Track Display: Displays the current track's title, artist, and album artwork.</li>
+      <li>Dynamic Playlist: Users can view and interact with the playlist, selecting tracks to play.</li>
+      
+      <h3>Volume Control:</h3>
+      <li>Adjustable Volume: Slider to control the playback volume.</li>
+      
+      <h3>Playlist Management:</h3>
+      <li>Track Display: Displays the current track's title, artist, and album artwork.</li>
+      <li>Dynamic Playlist: Users can view and interact with the playlist, selecting tracks to play.</li>
+      
+      <h3>Technical Implementation</h3>
+      <li>HTML: Structures the application with semantic elements, providing a solid foundation for content and accessibility.</li>
+      <li>CSS: Styles the Music Player with modern, responsive design techniques, ensuring a visually appealing interface.</li>
+      <li>JavaScript: Implements the core functionality, including playback controls, playlist management, and interactive elements.</li>
+      
+      <h3>Key Learning Outcomes</h3>
+      <li>Front-End Development: Gained practical experience in creating a web application from scratch.</li>
+      <li>Responsive Design: Applied CSS techniques to ensure the Music Player works well on various devices.</li>
+      <li>JavaScript Programming: Enhanced skills in JavaScript, particularly in handling events, manipulating the DOM, and managing state.</li>
+      
+      <h3>Future Enhancements</h3>
+      <li>Playlist Customization: Allow users to create and manage their own playlists.</li>
+      <li>Advanced Audio Features: Implement features like shuffle, repeat, and equalizer settings.</li>
+      <li>Backend Integration: Add a backend to store user data and playlists for a more personalized experience.</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+      <div class="link-mp">
+        <button class="music-btn">
+          <a href="https://aaliyah-p.github.io/JavaScript-Project-2/"> View Here!</a>
+        </button>
+      </div>
+</div>
+</body>
+</html>
