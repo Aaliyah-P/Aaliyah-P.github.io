@@ -522,7 +522,7 @@ nav .menu{
 }
 
 .contact-left, .contact-right{
-  flex-basis: 97%;
+  flex-basis: 94%;
 }
 
 .typedText{
@@ -560,14 +560,31 @@ width: 98%;
  }
 
 
-
-
-
-
-
-
-
-
-
 }
 
+@media only screen and(max-width: 420px) {
+  .sub-title{
+    font-size: 45px;
+  }
+ 
+  p, .envelope a{
+    font-size: 12px;
+  }
+
+ 
+
+ .about-col-1, .about-col-2{
+   flex-basis: 100%;
+   
+ }
+ .about-col-1{
+   margin-bottom: 30px;
+ }
+ .about-col-2{
+   font-size: 10px;
+ }
+
+ .contact-left, .contact-right{
+  flex-basis: 85%;
+}
+}
